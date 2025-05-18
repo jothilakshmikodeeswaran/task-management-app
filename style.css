@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 200px;
+  background-color: #d2c68e;
+  
+}
+.task-form, .filters {
+  margin-bottom: 20px;
+}
+.task-form input, .task-form select, .filters select {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+
+}
+
+ul#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+li.task-item {
+  background: #eef0b2;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.task-overdue {
+  border-color: red;
+}.btn-primary {
+    background-color: #5338ec;
+    border: none;
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+
+
+input:required {
+  border-left: 5px solid rgb(167, 70, 10);
+}
+
+
+input:valid {
+  border-left: 5px solid green;
+}
+
+input:invalid {
+  border-left: 5px solid red;
+  background-color: #ffe0e0;
+}
+
+input:focus:invalid {
+  outline: none; /* Avoid double indication of error*/
+}
+
+/* Styling error messages (often shown via JavaScript) */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
